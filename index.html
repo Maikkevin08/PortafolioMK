@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer" />
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="icon" type="image/png" href="img/favicon1.png">
+</head>
+<body>
+    <!-- #Menu encabezado-->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">MK</a>
+
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="selecionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="selecionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="selecionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="selecionar()">CURRICULUM</a></li>
+                    <li><a href="#portafolio" onclick="selecionar()">PORTAFOLIO</a></li>
+                    <li><a href="#contacto" onclick="selecionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu ()">
+                <i class="fa-solid fa-bars"></i>
+
+            </div>
+
+        </header>
+    </div>
+    <!--Seccion Inicio-->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/mk.png" alt="">
+            </div>
+            <h1>MAIK KEVIN</h1>
+            <h2>Ingeniero de Sistemas||Desarrollador web de Full Stack</h2>
+            <div class="redes">
+                <a href="https://www.facebook.com/maik.pacotaypenunez/"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.linkedin.com/in/maik-kevin-pacotaype-nu%C3%B1ez-94babb1b6/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></i></a>
+                <a href="#"><i class="fa-brands fa-skype"></i></a>
+                
+                <a href="#"><i class="fa-solid fa-rss"></i></a>
+
+                
+            </div>
+        </div>
+    </section>
+
+    <!--Seccion sobre Mi-->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mi</h2>
+            <p> <span> Hola soy Maik Kevin. </span>
+                Soy un profesional apasionado del desarrollo web, que ha participado
+                 en diversos proyectos y ha demostrado una sólida base técnica. mi mentalidad enfocada en encontrar soluciones y
+                  su capacidad para asimilar rápidamente nuevas tecnologías me convierten en un valioso miembro del equipo. 
+                  A lo largo de mi estudio profesional, eh desarrollado diversos proyectos web, demostrando versatilidad 
+                  y habilidades en diferentes áreas del desarrollo web. 
+            </p>
+            <div class="fila">
+                <!--datos personales-->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            08-06-1997
+                        </li>
+                        <li>
+                            <strong>Telefono</strong>
+                            +51 999708037
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            sistemas27162140@gmail.com
+                        </li>
+                        <li>
+                            <strong>Website</strong>
+                            www.mk.com
+                        </li>
+                        <li>
+                            <strong>Direccion</strong>
+                            Moore N° 111, Peru
+                        </li>
+                        <li>
+                            <strong>cargo</strong>
+                            <span>FRELANCE</span>
+                        </li>
+                    </ul>
+                </div>
+                <!--intereses-->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-brands fa-apple"></i>
+                            <span>MAC OS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>DEPORTE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-car"></i>
+                            <span>AUTOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-camera-retro"></i>
+                            <span>FOTOS</span>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+            <button >
+               <a download="cv" href="/Curriculum Vitae MK.pdf"> Descargar CV <i class="fa-solid fa-download" ></i>
+                    <span class="overlay"></span></a>
+            </button>
+        </div>
+    </section>
+    <!--Seccion Skills-->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!--Tecnical Skills-->
+                <div class="col">
+                    <h3>Tecnical Skills</h3>
+                    <div class="skill">
+                        <span>JavaScript</span>
+                        <div class="barra-skill">
+                            <div class="progreso javascript">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso htmlcss">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Java</span>
+                        <div class="barra-skill">
+                            <div class="progreso java">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Python</span>
+                        <div class="barra-skill">
+                            <div class="progreso python">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Power Bi</span>
+                        <div class="barra-skill">
+                            <div class="progreso powerbi">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Profesional Skills-->
+                <div class="col">
+                    <h3>Profesional Skills</h3>
+                    <div class="skill">
+                        <span>Comunicacion</span>
+                        <div class="barra-skill">
+                            <div class="progreso comunicacion">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <span>Trabajo en equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso trabajo">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso creatividad">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicacion</span>
+                        <div class="barra-skill">
+                            <div class="progreso dedicacion">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Probidad</span>
+                        <div class="barra-skill">
+                            <div class="progreso probidad">
+                                <span>99%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Seccion Curriculum-->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educacion</h3>
+                    <div class="item izq">
+                        <h4>Ingenieria de Sistemas</h4>
+                        <span class="casa">UNSCH</span>
+                        <span class="fecha"> 2016-2022</span>
+                        <p>Egresado de la escuela profesional de ingenieria de sistemas de la Universidad Nacional de San Cristobal
+                            de Huamanga-Peru.
+
+                        </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Desarrollador Web Full Stack</h4>
+                        <span class="casa">Academlo</span>
+                        <span class="fecha"> 2023-2024</span>
+                        <p>full-stack developer, desarrollador en front-end y back-end </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Ingles</h4>
+                        <span class="casa">INDI-UNSCH</span>
+                        <span class="fecha"> 2022-2023</span>
+                        <p>INSTITUTO DE IDIOMAS INDI - UNSCH</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>technological solutions team
+                        </h4>
+                        <span class="casa">ESSALUD</span>
+                        <span class="fecha"> 2023</span>
+                        <p>Como parte de equipo de trabajo de manera remota de ESSALUD, como Frontend esta en pie el desarrollo de una pagina web donde se vea la mejor control de ingreso y salida de balones de oxigeno de diferentes ipres.  </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>graphic designer</h4>
+                        <span class="casa">The Apus-Wasi-Ayacucho</span>
+                        <span class="fecha"> 2023</span>
+                        <p>Diseñador grafico y publicidad en The Apus Wasi, el trabajo realizados es de manera temporal donde se maneja el marketing del rubro de negocio y manejo de su pagina.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>volunteers for the data analysis project</h4>
+                        <span class="casa">EDT Consulting</span>
+                        <span class="fecha"> 2023</span>
+                        <p>Miembro de voluntariados de Engenier Data Tecnologic, donde se realiza los talleres, capacitaciones, cursos basados a  tecnologia en data science.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    
+                </div>
+        
+            </div>
+        </div>
+    </section>
+    <!--Seccion portafolio-->
+    <section id="portafolio" class="portafolio">
+        <div class="contenido-seccion">
+            <h2>PORTAFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/sistema de balon.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Sistema de balon de oxigo ESSALUD</h3>
+                        <p>Fotografia</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/infogalax.jpg" alt="">
+                    <div class="overlay">
+                        <h3>INFOGALAX</h3>
+                        <p>Fotografia</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/pokedex.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Pokedex Play</h3>
+                        <p>Fotografia</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/rick.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Rick y Morty</h3>
+                        <p>Fotografia</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/clima.jpg" alt="">
+                    <div class="overlay">
+                        <h3>climate</h3>
+                        <p>Fotografia</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/p6.jpg" alt="">
+                    <div class="overlay">
+                        <h3>Diseño Creativo</h3>
+                        <p>Fotografia</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!--Seecion Contacto-->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!--formulario-->
+                <form class="col" action="https://formsubmit.co/sistemas27162140@gmail.com" method="POST">
+                    <input type="text" placeholder="Tú Nombre" name="name">
+                    <input type="text" placeholder="Número telefónico" name="telefono">
+                    <input type="text" placeholder="Dirección de correo" name="email">
+                    <input type="text" placeholder="Tema" name="text">
+                    <textarea name=" coments" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/">
+                    <input type="hidden" name="_captcha" value="false">
+                </form>
+                <!--Mapa-->
+                <div class="col">
+                    <img src="img/ubicacion.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Peru +51, Huamanga Ayacucho 
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Llamanos: +51 999708037
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: sistemas27162140@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://www.facebook.com/maik.pacotaypenunez/"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.linkedin.com/in/maik-kevin-pacotaype-nu%C3%B1ez-94babb1b6/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></i></a>
+            <a href="#"><i class="fa-brands fa-skype"></i></a>
+            
+            <a href="#"><i class="fa-solid fa-rss"></i></a>
+
+            
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
