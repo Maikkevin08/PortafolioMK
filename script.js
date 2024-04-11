@@ -15,6 +15,8 @@ function seleccionar(){
     menuVisble=false
 }
 //funcion que aplica las animaciones de las habilidades
+
+/*
 function efectoHabilidades(){
     var skills=document.getElementById("skills")
     var diastancia_skills=window.innerHeight-skills.getBoundingClientRect().top;
@@ -31,7 +33,7 @@ function efectoHabilidades(){
         habilidades[8].classList.add("dedicacion");
         habilidades[9].classList.add("probidad");
     }
-}
+}*/
 //dedecto el scrolling para aplicar la animacion de las barra de las habilidades
 window.onscroll =function(){
     efectoHabilidades();
