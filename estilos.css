@@ -564,12 +564,34 @@ margin: 12px 0;
     cursor: pointer;
 
 }
+@keyframes border-animation {
+    0% { border-color: rgb(238, 82, 82); }
+    50% { border-color: rgb(220, 220, 239); }
+    100% { border-color: rgb(122, 216, 122); }
+}
 .portafolio .galeria .proyecto img {
     width: 100%;
+    height: 200px;
     display: block;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    opacity: 0.8;
+    border: 2px solid;
+    border: 2px solid;
+    animation: border-animation 3s infinite;
+    
+   
+    
+}
+.portafolio .galeria .proyecto img:hover{
+    transform: scale(1.1);
+    
 
 }
-.portfolio .galeria .proyecto .overlay{
+
+
+/**
+.portfolio .galeria .proyecto  .overlay{
     position: absolute;
     top: 0;
     width: 100%;
@@ -583,10 +605,11 @@ margin: 12px 0;
     font-size: 18px;
     letter-spacing: 3px;
     opacity: 0;
-} 
+} **/
 .portfolio .galeria .proyecto .overlay h3{
     margin-bottom: 20px;
     transition: 1s;
+    text-align: center;
 }
 .portfolio .galeria .proyecto .overlay:hover{
     opacity: 1;
